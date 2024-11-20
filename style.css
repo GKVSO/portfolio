@@ -3,7 +3,8 @@
 
 /* VARIABLES */
 :root {
-	--text-color: white;
+	--text-color: black;
+	--header-text-color: white;
 	--header-bc-color: black;
 }
 
@@ -12,7 +13,6 @@ html, body {
 	width: 100%;
 	min-height: 100vh;
 	height: 100%;
-	overflow: hidden;
 }
 
 body {
@@ -35,12 +35,17 @@ body {
 	grid-area: header;
 	height: 100vh;
 	background-color: var(--header-bc-color);
+	color: var(--header-text-color)
 }
 .main {
 	grid-area: main;
 }
 .footer {
 	grid-area: footer;
+}
+
+section {
+	padding: 50px 0px;
 }
 
 .container {
@@ -52,6 +57,9 @@ body {
 /* TYPOGRAPHY */
 h1 {
 	font-size: 50px;
+}
+h4 {
+	font-size: 30px;
 }
 
 /* HEADER */
@@ -86,6 +94,39 @@ h1 {
 	border: 2px solid var(--text-color);
 	padding: 20px 30px;
 }
+.button_header {
+	color: var(--header-text-color);
+	border: 2px solid var(--header-text-color);
+
+}
 .button:hover {
 	cursor: pointer;
+}
+
+/* PROJECTS */
+.projects-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.projects-card {
+	padding: 30px;
+	border: 3px solid black;
+}
+
+.projects-card__text {
+	margin-bottom: 20px;
+}
+
+.projects-card__img-container {
+	width: 100%;
+	aspect-ratio: 16/9;
+
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+.projects-card__img {
+	width: 100%;
+	object-fit: cover;
 }
