@@ -1,0 +1,91 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root {
+	--text-color: white;
+	--header-bc-color: black;
+}
+
+/* LAYOUT */
+html, body {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer"
+	;
+	grid-auto-rows: min-content auto min-content;
+
+	font-family: "Ubuntu Mono", monospace;
+	line-height: 1.2;
+	font-size: 18px;
+
+	color: var(--text-color);
+}
+
+.header {
+	grid-area: header;
+	height: 100vh;
+	background-color: var(--header-bc-color);
+}
+.main {
+	grid-area: main;
+}
+.footer {
+	grid-area: footer;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+	font-size: 50px;
+}
+
+/* HEADER */
+.header__content {
+	width: 100%;
+	height: 100%;	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	flex-direction: column;
+}
+.header__title {
+	margin-bottom: 30px;
+}
+.header__subtitle {
+	margin-bottom: 50px;
+	max-width: 70%;
+}
+
+.header > .container, .header__content {
+	height: 100%;
+}
+
+/* BUTTON */
+.button {
+	color: var(--text-color);
+
+	background-color: transparent;
+	border: 2px solid var(--text-color);
+	padding: 20px 30px;
+}
+.button:hover {
+	cursor: pointer;
+}
