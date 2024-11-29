@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('TTNorms-Bold.eot');
+    src: url('TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTNorms-Bold.woff2') format('woff2'),
+        url('TTNorms-Bold.woff') format('woff'),
+        url('TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Bold.woff2') format('woff2'),
+        url('Gilroy-Bold.woff') format('woff'),
+        url('Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl-300';
+    src: url('MuseoSansCyrl-300.eot');
+    src: url('MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-300.woff2') format('woff2'),
+        url('MuseoSansCyrl-300.woff') format('woff'),
+        url('MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('TTNorms-Regular.eot');
+    src: url('TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTNorms-Regular.woff2') format('woff2'),
+        url('TTNorms-Regular.woff') format('woff'),
+        url('TTNorms-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

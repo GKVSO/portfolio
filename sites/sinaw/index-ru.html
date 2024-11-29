@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/dist/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Sinaw</title>
+    <style>
+        .header-input:hover .header-form__line {
+            transform: translateX(100%);
+            left: auto;
+            right: 0;
+        }
+        .classes-inner {
+            height: 444px;
+        }
+        .app-content__title {
+            line-height: 120%;
+        }
+        .app-content__text {
+            line-height: 140%;
+        }
+        @media (max-width: 991px) {
+            .footer-box {
+                grid-gap: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="cap">
+                    <div class="cap-block">
+                        <a class="logo cap-logo" href="#"><img src="images/dist/logo.svg" alt="Logotipe"></a>
+
+                        <nav class="cap-nav">
+                            <ul class="not-list">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#classes">Курсы</a></li>
+                                <li><a href="#cource">Цена</a></li>
+                                <li><a href="#app">Приложение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="cap-block">
+                        <div class="cap-language language-select">
+                            <span class="language-select__current">Rus</span>
+                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM2 12h20"
+                                    stroke="#D1D1D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10v0z"
+                                    stroke="#D1D1D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <img class="language-select__arrow" src="images/dist/cap/arrow.svg" alt="Arrow">
+
+                            <!-- Open menu -->
+                            <nav class="language-select-menu">
+                                <ul class="not-list">
+                                    <li><a href="index.html">Eng</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="cap-btn btn">Войти</button>
+                    </div>
+                </div>
+
+                <div class="header-box">
+                    <div class="header-imaged">
+                        <div class="parallax" id="scene">
+                            <div class="layout" data-depth="0.4">
+                                <img src="images/dist/header/icon-1.svg" alt="" class="layout-icon-one">
+                            </div>
+                            <div class="layout" data-depth="0.4">
+                                <img src="images/dist/header/icon-2.svg" alt="" class="layout-icon-two">
+                            </div>
+                            <div class="layout" data-depth="0.2">
+                                <img src="images/dist/header/circle-one.png" alt="" class="layout-circle-one">
+                            </div>
+                            <div class="layout" data-depth="0.2">
+                                <img src="images/dist/header/circle-two.png" alt="" class="layout-circle-two">
+                            </div>
+                            <div class="layout" data-depth="0.1">
+                                <img src="images/dist/header/hero.png" alt="" class="layout-hero">
+                            </div>
+                            <div class="layout" data-depth="0.2">
+                                <img src="images/dist/header/circle-three.png" alt="" class="layout-circle-three">
+                            </div>
+                        </div>
+                        <div class="header-student">
+                            <ul class="header-avatar not-list">
+                                <li><img src="images/dist/header/avatar-1.jpg" alt="avatar"></li>
+                                <li><img src="images/dist/header/avatar-2.jpg" alt="avatar"></li>
+                                <li><img src="images/dist/header/avatar-3.jpg" alt="avatar"></li>
+                                <li><img src="images/dist/header/avatar-4.jpg" alt="avatar"></li>
+                                <li>
+                                    <svg width="26" height="26" viewBox="0 0 26 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5" filter="url(#filter0_d_101_397)">
+                                            <path d="M13 5V19" stroke="#171836" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 12H20" stroke="#171836" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_101_397" x="-3" y="0" width="32" height="32"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="2" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_101_397" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_101_397" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <span class="header-student__text">
+                                Более 80т+ студентов <span>присоеденились!</span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="header-content">
+                        <h1 class="header-title">Развивайте Свои Навыки.</h1>
+                        <span class="subtitle">
+                            У нас есть кое-что важное для вас, кто хочет повысить свой уровень!
+                        </span>
+                        <form class="header-form" action="#">
+                            <input class="header-input" type="text" name="name" id="name"
+                                placeholder="Чему ты хочешь научиться...">
+                            <button class="header-button btn btn-input">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                        stroke="#9A9CCB" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21 20.9999L16.65 16.6499" stroke="#9A9CCB" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </button>
+                        </form>
+
+                        <div class="header-suggestions">
+                            <p class="header-suggestions__text">Наши предложения</p>
+                            <ul class="header-suggestions__list not-list">
+                                <li><button class="header-suggestions__btn btn">UI UX Дизайн</button></li>
+                                <li><button class="header-suggestions__btn btn">Фундамент CSS</button></li>
+                                <li><button class="header-suggestions__btn btn">3D Дизайн</button></li>
+                                <li><button class="header-suggestions__btn btn">Создание сайтов</button></li>
+                                <li><button class="header-suggestions__btn btn">Дизайн логотипов</button></li>
+                                <li><button class="header-suggestions__btn btn">Дизайн иконок</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="header-next">
+                <div class="header-arrow">
+                    <span class="arrow-line"></span>
+                    <div class="arrow-indicator">
+                        <span class="arrow-indicator__line"></span>
+                        <span class="arrow-indicator__line"></span>
+                    </div>
+                </div>
+            </button>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- ABOUT -->
+            <section class="about">
+                <div class="container">
+                    <div class="about-box">
+                        <!-- About inner -->
+                        <div class="about-inner">
+                            <div class="about-inner-header">
+                                <span class="about-inner__title">Заведи новых друзей</span>
+                                <img src="images/dist/about/friends.svg" alt="" class="about-inner-header__img">
+                            </div>
+                            <p class="about-inner__text">Вы встретите новых друзей на некоторых занятиях, которые вы посещаете. Скажи
+                            поздоровайся с ними и подружись</p>
+                        </div>
+
+                        <!-- About inner -->
+                        <div class="about-inner">
+                            <div class="about-inner-header">
+                                <span class="about-inner__title">Опытный наставник</span>
+                                <img src="images/dist/about/mentor.svg" alt="" class="about-inner-header__img">
+                            </div>
+                            <p class="about-inner__text">Учитесь серьезно и не забывайте тоже расслабляться. Изучайте и
+                            наслаждайтесь материалами или занятиями с нашими опытными наставниками.</p>
+                        </div>
+
+                        <!-- About inner -->
+                        <div class="about-inner">
+                            <div class="about-inner-header">
+                                <span class="about-inner__title">Гибкий доступ</span>
+                                <img src="images/dist/about/access.svg" alt="" class="about-inner-header__img">
+                            </div>
+                            <p class="about-inner__text">Вы можете легко получить доступ к материалам или классам с помощью нашего веб-сайта, также
+                            мобильного. Доступ к нему везде и всегда, без ограничений для
+                            тебе учиться!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CLASSES -->
+            <section class="classes" id="classes">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Чему ты хочешь научиться?</h2>
+                        <span class="subtit">
+                            Выберите чему вы хотите научиться. И наслаждайтесь учебой.
+                        </span>
+                    </div>
+                    <div class="classes-box">
+                        <!-- Classes inner -->
+                        <div class="classes-inner">
+                            <div class="classes-img">
+                                <a href=""><img src="images/dist/classes/laptop.jpg" alt="Laptop"></a>
+                                <div class="classes-img__counter"><span>12 видео</span></div>
+                            </div>
+
+                            <span class="classes-inner__cat">Технологии</span>
+                            <p class="classes-inner__title">Маркетинг</p>
+                            <p class="classes-inner__text">
+                                Цель этого курса - дать вам более глубокое понимание основных процессов ...
+                            </p>
+
+                            <span class="classes-inner__line"></span>
+
+                            <div class="classes-avatar">
+                                <a href=""><img src="images/dist/classes/avatar-1.jpg" alt="Images Joey Piere"
+                                        class="classes-avatar__img"></a>
+                                <div class="classes-avatar__text">
+                                    <span class="classes-avatar__name">Joey Piere</span>
+                                    <span class="classes-avatar__profession">Ментор</span>
+                                </div>
+                            </div>
+
+                            <button class="classes-inner__btn btn">Получить доступ</button>
+                        </div>
+
+                        <!-- Classes inner -->
+                        <div class="classes-inner">
+                            <div class="classes-img">
+                                <a href=""><img src="images/dist/classes/design.jpg" alt="Design"></a>
+                                <div class="classes-img__counter"><span>7 Видео</span></div>
+                            </div>
+
+                            <span class="classes-inner__cat">Дизайн</span>
+                            <p class="classes-inner__title">Основы Figma</p>
+                            <p class="classes-inner__text">
+                                Эти уроки и упражнения помогут вам начать проектирование с помощью Figma ...
+                            </p>
+
+                            <span class="classes-inner__line"></span>
+
+                            <div class="classes-avatar">
+                                <img src="images/dist/classes/avatar-2.jpg" alt="" class="classes-avatar__img">
+                                <div class="classes-avatar__text">
+                                    <span class="classes-avatar__name">Araya Sheila</span>
+                                    <span class="classes-avatar__profession">Ментор</span>
+                                </div>
+                            </div>
+
+                            <button class="classes-inner__btn btn">Получить доступ</button>
+                        </div>
+
+                        <!-- Classes inner -->
+                        <div class="classes-inner">
+                            <div class="classes-img">
+                                <a href=""><img src="images/dist/classes/html.jpg" alt="html"></a>
+                                <div class="classes-img__counter"><span>10 Видео</span></div>
+                            </div>
+
+                            <span class="classes-inner__cat">Программирование</span>
+                            <p class="classes-inner__title">HTML Fundamental</p>
+                            <p class="classes-inner__text">
+                                Хорошо организованные и простые для понимания учебные пособия с большим ...
+                            </p>
+
+                            <span class="classes-inner__line"></span>
+
+                            <div class="classes-avatar">
+                                <img src="images/dist/classes/avatar-3.jpg" alt="" class="classes-avatar__img">
+                                <div class="classes-avatar__text">
+                                    <span class="classes-avatar__name">Ellisa Ruth</span>
+                                    <span class="classes-avatar__profession">Ментор</span>
+                                </div>
+                            </div>
+
+                            <button class="classes-inner__btn btn">Получить доступ</button>
+                        </div>
+
+                        <!-- Classes inner -->
+                        <div class="classes-inner">
+                            <div class="classes-img">
+                                <a href=""><img src="images/dist/classes/android.jpg" alt="Laptop"></a>
+                                <div class="classes-img__counter"><span>16 видео</span></div>
+                            </div>
+
+                            <span class="classes-inner__cat">Программирование</span>
+                            <p class="classes-inner__title">Андроид приложения</p>
+                            <p class="classes-inner__text">
+                                Хорошо организованные и простые для понимания учебные пособия с большим ...
+                            </p>
+
+                            <span class="classes-inner__line"></span>
+
+                            <div class="classes-avatar">
+                                <img src="images/dist/classes/avatar-4.jpg" alt="" class="classes-avatar__img">
+                                <div class="classes-avatar__text">
+                                    <span class="classes-avatar__name">Ellisa Ruth</span>
+                                    <span class="classes-avatar__profession">Ментор</span>
+                                </div>
+                            </div>
+
+                            <button class="classes-inner__btn btn">Получить доступ</button>
+                        </div>
+                    </div>
+
+                    <button class="classes-btn">Посмотреть все категории</button>
+                </div>
+            </section>
+
+            <!-- COURCE -->
+            <section class="cource" id="cource">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Стоимость курса</h2>
+                        <span class="subtitle">Выберите цены, соответствующие вашим потребностям.</span>
+                    </div>
+                    <div class="cource-box">
+                        <!-- Cource inner -->
+                        <div class="cource-inner">
+                            <div class="cource-inner-start">
+                                <div class="cource-inner-header">
+                                    <img src="images/dist/cource/star.png" alt="Free" class="cource-inner__img">
+                                    <div class="cource-inner-header__block">
+                                        <p class="cource-inner__title">Бесплатно</p>
+                                        <p class="cource-inner__price">0 <span>/ месяц.</span></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+
+                                <ul class="cource-inner-list not-list">
+                                    <li class="cource-inner-list__item">Бесплатная электронная книга</li>
+                                    <li class="cource-inner-list__item">Материалы обновляются каждый день</li>
+                                    <li class="cource-inner-list__item">Видео материалов для бесплатной загрузки</li>
+                                    <li class="cource-inner-list__item">Разблокируйте 5 видеороликов с материалами</li>
+                                </ul>
+                            </div>
+                            <div class="cource-inner-end">
+                                <button class="cource-btn cource-btn__dont-click">Ваш текущий пакет</button>
+                            </div>
+                        </div>
+
+                        <!-- Cource inner -->
+                        <div class="cource-inner">
+                            <div class="cource-inner-start">
+                                <div class="cource-inner-header">
+                                    <img src="images/dist/cource/key.png" alt="Key" class="cource-inner__img">
+                                    <div class="cource-inner-header__block">
+                                        <p class="cource-inner__title">Экспресс</p>
+                                        <p class="cource-inner__price">75 <span>/ месяц.</span></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+
+                                <ul class="cource-inner-list not-list">
+                                    <li class="cource-inner-list__item">Бесплатная электронная книга</li>
+                                    <li class="cource-inner-list__item">Материалы обновляются каждый день</li>
+                                    <li class="cource-inner-list__item">Видео материалов для бесплатной загрузки</li>
+                                    <li class="cource-inner-list__item">Разблокируйте 15 видеороликов с материалами</li>
+                                    <li class="cource-inner-list__item">Встречи 3 раза в неделю</li>
+                                    <li class="cource-inner-list__item">Неограниченный сохраненный класс</li>
+                                </ul>
+                            </div>
+                            <div class="cource-inner-end">
+                                <button class="cource-btn">Экспресс пакет</button>
+                            </div>
+                        </div>
+
+                        <!-- Cource inner -->
+                        <div class="cource-inner popular">
+                            <div class="cource-inner-start">
+                                <div class="cource-inner-header">
+                                    <img src="images/dist/cource/crown.png" alt="Free" class="cource-inner__img">
+                                    <div class="cource-inner-header__block">
+                                        <p class="cource-inner__title">Премиум</p>
+                                        <p class="cource-inner__price">155 <span>/ месяц.</span></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+
+                                <ul class="cource-inner-list not-list">
+                                    <li class="cource-inner-list__item">Бесплатная электронная книга для каждого класса</li>
+                                    <li class="cource-inner-list__item">Материалы обновляются каждый день</li>
+                                    <li class="cource-inner-list__item">Видео материалов для бесплатной загрузки</li>
+                                    <li class="cource-inner-list__item">Приватный чат с наставником</li>
+                                    <li class="cource-inner-list__item">Встречи 3 раза в неделю</li>
+                                    <li class="cource-inner-list__item">Разблокируйте до 30 видеороликов с материалами</li>
+                                    <li class="cource-inner-list__item">Неограниченный сохраненный класс</li>
+                                </ul>
+                            </div>
+                            <div class="cource-inner-end">
+                                <button class="cource-btn">Премиум пакет</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- APP -->
+            <section class="app" id="app">
+                <div class="container">
+                    <div class="app-box">
+                        <div class="app-content">
+                            <p class="app-content__title">Получить приложение прямо сейчай</p>
+                            <p class="app-content__text">Обращайтесь к нашим приложениям везде и всегда с помощью Sinaw Mobile</p>
+                            <ul class="app-content__list not-list">
+                                <li class="app-content__item">
+                                    <a href="#"><img src="images/dist/app/google.jpg" alt="Play market store"></a>
+                                </li>
+                                <li class="app-content__item">
+                                    <a href="#"><img src="images/dist/app/apple.jpg" alt="Apple store"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="app-images">
+                            <div class="parallax" id="image">
+                                <div class="layout" data-depth="0.3">
+                                    <div class="layout-image-one layout-border layout-item">
+                                        <img src="images/dist/app/woomen.png" alt="Photo">
+                                    </div>
+                                </div>
+                                <div class="layout" data-depth="0.3">
+                                    <div class="layout-image-two layout-border layout-item">
+                                        <img src="images/dist/app/woomen-two.png" alt="Photo">
+                                    </div>
+                                </div>
+                                <div class="layout" data-depth="0.3">
+                                    <div class="layout-image-three layout-border layout-item">
+                                        <img src="images/dist/app/boy.png" alt="Photo">
+                                    </div>
+                                </div>
+                                <div class="layout" data-depth="0.1">
+                                    <div class="layout-laptop layout-box layout-item">
+                                        <img src="images/dist/app/laptop.svg" alt="Chart">
+                                        <a href="#">Коллекции пакетов</a>
+                                        <button>
+                                            <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.457 12.73l4.118-4.118-4.118-4.117" stroke="#fff"
+                                                    stroke-width="2.059" stroke-linecap="round" stroke-linejoin="round"
+                                                    opacity=".7" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="layout" data-depth="0.1">
+                                        <div class="layout-chart layout-box layout-item">
+                                            <img src="images/dist/app/chart.svg" alt="Chart">
+                                            <a href="#">Ход прохождения курсов</a>
+                                            <button>
+                                                <svg width="17" height="17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.457 12.73l4.118-4.118-4.118-4.117" stroke="#fff"
+                                                        stroke-width="2.059" stroke-linecap="round"
+                                                        stroke-linejoin="round" opacity=".7" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="app-images-header">
+                                <div class="app-images__person">
+                                    <div class="app-images__avatar"><img src="images/dist/app/person.svg" alt="Avatar">
+                                    </div>
+                                    <div class="app-images__avatar-name">
+                                        <span class="app-images__name">Hello, Alexander</span>
+                                        <span class="app-images__member">Premium Member</span>
+                                    </div>
+                                </div>
+                                <div class="app-images__icon">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_101_208)">
+                                            <path
+                                                d="M19.196 17.28H4.385a.679.679 0 01-.565-.308c-1.955-2.947-2.104-8.616-2.116-9.457v-.1c0-.388.305-.702.682-.703h.001c.377 0 .683.313.684.7l.002.12c.06 2.002 1.662 3.61 3.623 3.61 1.999 0 3.625-1.671 3.625-3.727 0-.388.306-.703.684-.703h1.571c.378 0 .684.315.684.703 0 2.056 1.626 3.728 3.625 3.728 1.962 0 3.565-1.612 3.623-3.616l.002-.114a.694.694 0 01.684-.701c.378 0 .684.315.684.703l-.001.1c-.012.841-.162 6.51-2.116 9.457a.68.68 0 01-.565.307z"
+                                                fill="#F79C6E" />
+                                            <path
+                                                d="M21.195 6.712h-.002a.694.694 0 00-.684.7l-.001.115c-.058 2.004-1.66 3.616-3.623 3.616-1.999 0-3.625-1.672-3.625-3.728a.694.694 0 00-.684-.703h-.786v10.567h7.406a.679.679 0 00.565-.307c1.954-2.947 2.104-8.616 2.116-9.457v-.1a.694.694 0 00-.682-.703z"
+                                                fill="#F6844B" />
+                                            <path
+                                                d="M11.79 4.31a2.405 2.405 0 00-2.4 2.402 2.404 2.404 0 002.401 2.402 2.404 2.404 0 002.402-2.402A2.404 2.404 0 0011.79 4.31z"
+                                                fill="#F6844B" />
+                                            <path
+                                                d="M11.79 4.31v4.804a2.405 2.405 0 002.402-2.402A2.405 2.405 0 0011.79 4.31z"
+                                                fill="#F47434" />
+                                            <path
+                                                d="M2.424 5.751C1.232 5.751.262 6.83.262 8.153s.97 2.402 2.162 2.402 2.161-1.078 2.161-2.402-.97-2.402-2.161-2.402z"
+                                                fill="#F6844B" />
+                                            <path
+                                                d="M21.157 5.751c-1.192 0-2.162 1.078-2.162 2.402s.97 2.402 2.162 2.402 2.162-1.078 2.162-2.402-.97-2.402-2.162-2.402z"
+                                                fill="#F47434" />
+                                            <path
+                                                d="M19.266 19.681H4.315c-.381 0-.69-.324-.69-.724V16.8h16.331v2.158c0 .4-.309.724-.69.724z"
+                                                fill="#F6844B" />
+                                            <path d="M11.79 19.681h7.476c.381 0 .69-.324.69-.724V16.8H11.79v2.882z"
+                                                fill="#F47434" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_101_208">
+                                                <path fill="#fff" transform="translate(.262 .467)"
+                                                    d="M0 0h23.056v23.056H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="app-images-light">
+                                <div class="app-images-light__icon">
+                                    <img src="images/dist/app/light.svg" alt="Lamp">
+                                </div>
+                                <div class="app-images-light__content">
+                                    <p class="app-images-light__title">Grow Your Skill, Join Now!</p>
+                                    <p class="app-images-light__subtitle">We have something big for you who want to
+                                        level up!</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-navigation">
+                    <!-- Footer block -->
+                    <div class="footer-block">
+                        <img src="images/dist/logo.svg" alt="Logo" class="footer-logo logo">
+                        <span class="footer-block__text">У вам есть вопросы ? Свяжитесь с нами в наших социальных сетях</span>
+                        <ul class="footer-social not-list">
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_101_278)">
+                                            <path
+                                                d="M19.9969 4.98101H22.7356V0.211006C22.2631 0.146006 20.6381 -0.000244141 18.7456 -0.000244141C14.7969 -0.000244141 12.0919 2.48351 12.0919 7.04851V11.2498H7.73438V16.5823H12.0919V29.9998H17.4344V16.5835H21.6156L22.2794 11.251H17.4331V7.57726C17.4344 6.03601 17.8494 4.98101 19.9969 4.98101V4.98101Z"
+                                                fill="#ACABBF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_101_278">
+                                                <rect width="30" height="30" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social__item"><a href="#">
+                                    <svg width="30" height="24" viewBox="0 0 30 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.77377 23.2628C20.3875 23.2628 26.1917 14.4697 26.1917 6.84489C26.1917 6.59515 26.1866 6.34644 26.1754 6.09911C27.302 5.28454 28.2812 4.26804 29.0538 3.11102C28.0199 3.57077 26.9071 3.87984 25.7401 4.01968C26.9313 3.30503 27.846 2.17502 28.2774 0.827941C27.1625 1.48892 25.9277 1.96914 24.6133 2.22851C23.5604 1.10692 22.0611 0.405518 20.4011 0.405518C17.2147 0.405518 14.6304 2.98959 14.6304 6.17496C14.6304 6.628 14.6812 7.06831 14.7801 7.49074C9.98429 7.24943 5.73149 4.95345 2.8858 1.46192C2.39045 2.31451 2.10459 3.3052 2.10459 4.36229C2.10459 6.36399 3.12333 8.1316 4.67234 9.16529C3.72567 9.13623 2.83644 8.87634 2.05901 8.44377C2.05815 8.46802 2.05815 8.49158 2.05815 8.51738C2.05815 11.312 4.04713 13.6453 6.6878 14.174C6.20277 14.3059 5.69245 14.377 5.16614 14.377C4.79497 14.377 4.43309 14.3405 4.08153 14.2729C4.81613 16.5656 6.94648 18.234 9.47208 18.2808C7.49704 19.8287 5.00911 20.7508 2.30514 20.7508C1.84006 20.7508 1.38031 20.7241 0.92865 20.6708C3.48246 22.3077 6.51494 23.263 9.77394 23.263"
+                                            fill="#ACABBF" />
+                                    </svg>
+
+                                </a></li>
+                            <li class="footer-social__item"><a href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.625 0H9.375C4.19813 0 0 4.19813 0 9.375V20.625C0 25.8019 4.19813 30 9.375 30H20.625C25.8019 30 30 25.8019 30 20.625V9.375C30 4.19813 25.8019 0 20.625 0ZM27.1875 20.625C27.1875 24.2437 24.2437 27.1875 20.625 27.1875H9.375C5.75625 27.1875 2.8125 24.2437 2.8125 20.625V9.375C2.8125 5.75625 5.75625 2.8125 9.375 2.8125H20.625C24.2437 2.8125 27.1875 5.75625 27.1875 9.375V20.625Z"
+                                            fill="#ACABBF" />
+                                        <path
+                                            d="M15.0003 7.49976C10.8584 7.49976 7.50031 10.8579 7.50031 14.9998C7.50031 19.1416 10.8584 22.4998 15.0003 22.4998C19.1422 22.4998 22.5003 19.1416 22.5003 14.9998C22.5003 10.8579 19.1422 7.49976 15.0003 7.49976ZM15.0003 19.6873C12.4166 19.6873 10.3128 17.5835 10.3128 14.9998C10.3128 12.4141 12.4166 10.3123 15.0003 10.3123C17.5841 10.3123 19.6878 12.4141 19.6878 14.9998C19.6878 17.5835 17.5841 19.6873 15.0003 19.6873Z"
+                                            fill="#ACABBF" />
+                                        <path
+                                            d="M23.0627 7.93721C23.6146 7.93721 24.062 7.48978 24.062 6.93784C24.062 6.38591 23.6146 5.93848 23.0627 5.93848C22.5107 5.93848 22.0633 6.38591 22.0633 6.93784C22.0633 7.48978 22.5107 7.93721 23.0627 7.93721Z"
+                                            fill="#ACABBF" />
+                                    </svg>
+
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer box -->
+                    <div class="footer-box">
+                        <div class="footer-inner">
+                            <span class="footer-inner__title">Меню</span>
+                            <ul class="footer-inner-list not-list">
+                                <li class="footer-inner-list__item"><a href="#">Главная</a></li>
+                                <li class="footer-inner-list__item"><a href="#classes">Курсы</a></li>
+                                <li class="footer-inner-list__item"><a href="#cource">Цена</a></li>
+                                <li class="footer-inner-list__item"><a href="#app">Приложение</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-inner">
+                            <span class="footer-inner__title">Сервис</span>
+                            <ul class="footer-inner-list not-list">
+                                <li class="footer-inner-list__item"><a href="#">Обновление материалов</a></li>
+                                <li class="footer-inner-list__item"><a href="#">Доверенный наставник</a></li>
+                                <li class="footer-inner-list__item"><a href="#">Бесплатные E-book</a></li>
+                                <li class="footer-inner-list__item"><a href="#">Встреча</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-inner">
+                            <span class="footer-inner__title">Дополнительная информация</span>
+                            <ul class="footer-inner-list not-list">
+                                <li class="footer-inner-list__item"><a href="#">Правила и условия</a></li>
+                                <li class="footer-inner-list__item"><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-inner">
+                            <span class="footer-inner__title">Скачать приложение</span>
+                            <ul class="footer-inner-list not-list">
+                                <li class="footer-inner-list__item"><a href="#">Google Play Store</a></li>
+                                <li class="footer-inner-list__item"><a href="#">App Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyrath">
+                    <span>Copyright © 2021 Sinauw. All Rights Reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="burger-menu">
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+    </div>
+    <nav class="burger-nav">
+        <ul class="not-list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#classes">Курсы</a></li>
+            <li><a href="#cource">Цена</a></li>
+            <li><a href="#app">Приложение</a></li>
+        </ul>
+    </nav>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
